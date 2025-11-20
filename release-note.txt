@@ -1,6 +1,10 @@
 Xpell-core Release Notes:
 
 
+0.0.55
+--------
+- _verbose property 
+- no GenericModule
 
 0.0.5
 -------

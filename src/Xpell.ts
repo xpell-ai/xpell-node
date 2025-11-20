@@ -59,6 +59,7 @@ export class XpellEngine {
     #_modules: { [name: string]: any } = {}
     parser: typeof XParser
     private _interval: NodeJS.Timeout | undefined
+    #_verbose: boolean = true
 
     constructor() {
         this._version = "0.0.1"
@@ -68,16 +69,26 @@ export class XpellEngine {
         this.parser = XParser
         this.#_modules = {}
         XEM.fire("xpell-init")
-        _xlog.enabled = false
+        _xlog.enabled = this.#_verbose
         //this.load()
     }
 
 
     /**
      * Enable Xpell logs to console
+     * @deprecated
      */
     verbose() {
         _xlog.enabled = true
+    }
+
+    get _verbose() {
+        return this.#_verbose
+    }
+
+    set _verbose(v: boolean) {
+        this.#_verbose = v
+        _xlog.enabled = v
     }
 
 
@@ -381,7 +392,7 @@ export { XLogger, XLogger as _xlog, _XLogger } from "./XLogger.js"
 export {
     XModule,
     type XModuleData,
-    GenericModule
+    // GenericModule
 } from "./XModule.js"
 export {
     XObject,

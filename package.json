@@ -1,6 +1,6 @@
 {
   "name": "xpell-node",
-  "version": "0.0.2",
+  "version": "0.0.551",
   "description": "Xpell Real-Time Interpreter for Node.js",
   "files": [
     "dist",
@@ -21,7 +21,7 @@
   "license": "GPL-3",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/fridman-tamir/Xpell-Core"
+    "url": "git+https://github.com/AimeVerse/xpell-node"
   },
   "devDependencies": {
     "@types/node": "^14.18.36",

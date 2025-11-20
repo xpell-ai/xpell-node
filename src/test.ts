@@ -2,9 +2,9 @@
 
 import Wormholes, { WormholeEvents } from "./Wormholes.js"
 import { XCommand, XCommandData, XModule, XObject, XObjectPack, _x, _xem, _xd, XObjectData } from "./Xpell.js"
-import { XModuleData, GenericModule as gm } from "./Xpell.js"
+import { XModuleData } from "./Xpell.js"
 //display Xpell engine info
-_x.verbose()
+_x._verbose = true
 
 
 
@@ -12,7 +12,6 @@ _x.verbose()
 
 _x.start()
 
-_x.loadModule(gm)
 
 
 export class myMod extends XModule {

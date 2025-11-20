@@ -264,5 +264,5 @@ export class XModule {
 
 }
 
-export const GenericModule = new XModule({_name:"xmodule"})
+// export const GenericModule = new XModule({_name:"xmodule"})
 export default XModule

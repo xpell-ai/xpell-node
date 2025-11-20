@@ -26,7 +26,4 @@
   },
   "include": ["src/**/*.ts"],                           /* Include all TypeScript files in the src folder. */
   "exclude": ["node_modules", "dist", "**/*.test.ts"],  /* Exclude unnecessary files and folders. */
-  "compilerOptions": {
-    "typeRoots": ["./types", "./node_modules/@types"]   /* Add your custom type directory. */
-  }
 }
